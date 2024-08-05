@@ -1,0 +1,80 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: ;
+        }
+        .slick-slide img {
+            width: 100%;
+        }
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            user-select: none;
+            touch-action: pan-y;
+        }
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+    </style>
+
+<div class="container">
+    <h2>Panel Companies / Valueable Clients</h2>
+    <section class="customer-logos slider">
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/1.jpg"></div>
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/2.jpg"></div>
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/3.jpg"></div>
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/4.jpg"></div>
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/5.jpg"></div>
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/6.jpg"></div>
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/7.jpg"></div>
+        <div class="slide"><img src="https://afh.com.pk/wp-content/uploads/2024/08/8.jpg"></div>
+    </section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+</script>
